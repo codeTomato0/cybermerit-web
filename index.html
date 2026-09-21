@@ -73,6 +73,15 @@
 <!-- cybermerit-pwa -->
 <script>
   if ('serviceWorker' in navigator) {
+    // 已经有旧版本在跑时，新版本接管后自动刷新一次，保证「发布完打开就是最新」
+    if (navigator.serviceWorker.controller) {
+      var refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+    }
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('./sw.js').catch(function (e) {
         console.warn('Service Worker 注册失败：', e);
