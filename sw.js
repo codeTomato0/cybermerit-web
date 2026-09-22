@@ -3,7 +3,7 @@
  * 策略：安装时把整个构建产物缓存下来（装到主屏幕后断网也能玩）；
  *       页面导航走「先网络后缓存」，这样重新部署后一联网就能拿到新版本。
  */
-const VERSION = '9c0c92bc3e';
+const VERSION = 'af797329d2';
 const CACHE = 'cybermerit-' + VERSION;
 const PRECACHE = [
     "./",
@@ -30,6 +30,7 @@ const PRECACHE = [
     "./assets/main/native/d0/d032ac98-05e1-4090-88bb-eb640dcb5fc1@b47c0@e9a6d.png",
     "./assets/resources/config.json",
     "./assets/resources/import/05/05065b05-bdbb-4c9a-8d48-05b8998b4e3a.json",
+    "./assets/resources/import/08/082d412da.json",
     "./assets/resources/import/0d/0da07888-bcc3-4c0e-9b6d-739708281d7d.json",
     "./assets/resources/import/15/151452f6-616e-4008-845d-8785e7f1a9a7.json",
     "./assets/resources/import/1a/1abde388-f690-4bd5-be1e-54005424a526.json",
@@ -39,7 +40,6 @@ const PRECACHE = [
     "./assets/resources/import/47/47d21eb4-a3c6-4398-846a-1e957e9a4ae2.json",
     "./assets/resources/import/48/4844f9cc-776b-493b-b527-e7a7e48a6aaa.json",
     "./assets/resources/import/52/5279fd77-e26e-4606-be59-60efb1ceebd9.json",
-    "./assets/resources/import/52/5279fd77-e26e-4606-be59-60efb1ceebd9@6c48a.json",
     "./assets/resources/import/65/65eb9582-914d-45df-aacd-0fbf2c3cadfa.json",
     "./assets/resources/import/6d/6d2a0ef3-c1a5-40de-8c26-9acbb2248d2f.json",
     "./assets/resources/import/71/71ca32b7-0f2f-4c10-888e-b7519771c702.json",
@@ -50,6 +50,7 @@ const PRECACHE = [
     "./assets/resources/import/90/9017262f-d620-4a78-af12-5d176c9e8439.json",
     "./assets/resources/import/91/91813616-89d7-40c2-be96-482b7e83a3e4.json",
     "./assets/resources/import/9a/9a120494-14bf-4853-8c33-58aea48cb6cd.json",
+    "./assets/resources/import/9e/9edcca5e-90b8-47d8-aa59-cca07a3c8f5c.json",
     "./assets/resources/import/9f/9f4f7692-c3be-4522-bdcc-d20e07c186e1.json",
     "./assets/resources/import/a6/a6cc2667-a927-4f07-bbad-583f42431f22.json",
     "./assets/resources/import/b3/b3312627-653e-4bf4-858e-7668e004985b.json",
@@ -80,6 +81,7 @@ const PRECACHE = [
     "./assets/resources/native/90/9017262f-d620-4a78-af12-5d176c9e8439.mp3",
     "./assets/resources/native/91/91813616-89d7-40c2-be96-482b7e83a3e4.mp3",
     "./assets/resources/native/9a/9a120494-14bf-4853-8c33-58aea48cb6cd/NotoSansSC-Bold.ttf",
+    "./assets/resources/native/9e/9edcca5e-90b8-47d8-aa59-cca07a3c8f5c.png",
     "./assets/resources/native/9f/9f4f7692-c3be-4522-bdcc-d20e07c186e1.mp3",
     "./assets/resources/native/a6/a6cc2667-a927-4f07-bbad-583f42431f22.mp3",
     "./assets/resources/native/b3/b3312627-653e-4bf4-858e-7668e004985b.mp3",
