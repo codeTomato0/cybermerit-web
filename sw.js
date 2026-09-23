@@ -3,7 +3,7 @@
  * 策略：安装时把整个构建产物缓存下来（装到主屏幕后断网也能玩）；
  *       页面导航走「先网络后缓存」，这样重新部署后一联网就能拿到新版本。
  */
-const VERSION = 'af797329d2';
+const VERSION = '585e99b1b8';
 const CACHE = 'cybermerit-' + VERSION;
 const PRECACHE = [
     "./",
